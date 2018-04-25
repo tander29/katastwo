@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     console.log("This, and below, is the add katas for 2+4");
+
+
+    function add(x,y) {
+        let answer = 0;
+        answer= x+y;
+        return answer
+    } 
+
+
+console.log(add(2,4));
+
+console.log("This is the multiply katas");
+
+
+
+  function multiply (x,y){
+      let answer = 0;
+      for(let i = 0; i < y; i++){
+          answer = add(answer, x);  
+      }
+      return answer;  
+  }
+
+  console.log(multiply(6,8))
+
+
+    function power (x,n){
+        let answer = 1;
+    for(let i = 0; i<n; i++){
+            answer = multiply(answer, x);
+        }
+        return answer;
+    }
+    console.log(power(2,8));
+   
+   function factorial (x) {
+       let answer = 1;
+       for(i = 0, y = x; i < x; i++, y--){ 
+           answer = multiply(y, answer);
+       }
+       return answer;
+   }
+  console.log(factorial(4))
+
+// the below is not done
+function fibonacci(n) {
+    let first = 1;
+    let second= 1;
+    let answer= 0;
+        for(i = 3; i < n; i++){
+        answer = add(first, second);
+                        first=second;
+                        second=answer;       
+                        
+}
+return answer;
+}
+console.log("This is fibonacci")
+console.log(fibonacci(8))
+</script>
+
+</body>
+</html>
